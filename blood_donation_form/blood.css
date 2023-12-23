@@ -1,0 +1,403 @@
+/* FORM STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100;200;300;400;500;700;900&family=Libre+Caslon+Text:wght@400;700&family=Nunito+Sans:wght@200;300;400;600&family=Nunito:wght@200;300;400;500;600&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto'
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    margin-bottom: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 2rem;
+    transform: scale(1.2);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #df1f21;
+}
+textarea {
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.nav-menu {
+    font-family: 'Libre Caslon Text', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 9rem;
+    position: relative;
+}
+
+.nav-menu a {
+    font-size: 1.1rem;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    position: relative; 
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background: red;
+    border-radius: 40px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+}
+
+.nav-menu a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.social-icons img {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: 0.8rem;
+}
+
+
+.container-flex {
+    display: flex;
+}
+
+.label-padding {
+    padding-bottom: 1rem;
+}
+
+.option-margin {
+    padding-right: 2rem;
+}
+
+.text-margin {
+    padding-right: 2rem;
+}
+
+#blood-bank {
+    height: 5rem;
+    width: 13rem;
+    cursor: pointer;
+}
+
+#align-right {
+    text-align: right;
+    margin: 0; 
+}
+
+#align-right h1 {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 10;
+    margin: 0;
+}
+
+#title {
+    color: #df1f21;
+    font-size: 3rem;
+}
+
+#container-padding {
+    padding: 1rem 6rem 1rem 0rem;
+}
+
+#gender-padding {
+    padding-right: 3rem;
+}
+
+#submit {
+    background-color: #df1f21;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+#submit:hover {
+    background-color: red;
+}
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#survey-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40rem;
+    padding: 4rem;
+    border-radius: 12px;
+    position: relative;
+}
+
+.bookmark {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 200px;
+    width: 50px;
+    padding: -100   0px;
+    transform: rotate(0deg) skew(0deg);
+    border-left: 30px solid red;
+    border-right: 30px solid red;
+    border-bottom: 30px solid transparent;
+}
+
+
+
+/* iPads and Tablets – 481px — 768px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 0.7rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        margin-bottom: 0;
+    }
+    
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 0.1rem;
+        transform: scale(1.2);
+}
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 1rem 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #container-padding {
+        padding: 0.1rem 2rem 1rem 2rem;
+    }
+
+    #gender-padding {
+        padding-right: 0.9rem;
+    }
+
+    #survey-form {
+        width: 75%;
+        padding: 1rem;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        position: relative;
+    }
+
+    #blood-bank {
+        height: 1.5rem;
+        width: 4rem;
+        cursor: pointer;
+    }
+
+    .social-icons img {
+        height: 0.6rem;
+        width: 0.6rem;
+        padding-left: 0.4rem;
+    }
+
+    #align-right h1 {
+        font-size: 0.8rem;
+        font-weight: 10;
+        margin: 0;
+    }
+
+    .nav-menu a {
+        font-size: 0.7rem;
+        margin: 0 7px;
+        text-decoration: none;
+        color: black;
+        position: relative; 
+    }
+
+    #title {
+        color: #df1f21;
+        font-size: 1.4rem;
+    }
+
+    .bookmark {
+        right: 20px;
+        height: 5rem;
+        width: 10px;
+        padding: -50   0px;
+        border-left: 8px solid red;
+        border-right: 8px solid red;
+        border-bottom: 8px solid transparent;
+    }
+}
+
+/* Laptops and small screen – 769px — 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    body {
+        font-size: 0.7rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7rem;
+        margin-bottom: 0;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 1rem;
+        transform: scale(1.2);
+}
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 1rem 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #gender-padding {
+        padding-right: 1rem;
+    }
+
+    #survey-form {
+        width: 60%;
+        padding: 3rem;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        position: relative;
+    }
+
+    #blood-bank {
+        height: 2rem;
+        width: 5rem;
+        cursor: pointer;
+    }
+
+    .social-icons img {
+        height: 0.9rem;
+        width: 0.9rem;
+        padding-left: 0.4rem;
+    }
+
+    #align-right h1 {
+        font-size: 1rem;
+        font-weight: 10;
+        margin: 0;
+    }
+
+    .nav-menu a {
+        font-size: 1rem;
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        position: relative; 
+    }
+
+    #title {
+        color: #df1f21;
+        font-size: 2.5rem;
+    }
+
+    .bookmark {
+        right: 20px;
+        height: 100px;
+        width: 20px;
+        padding: -100   0px;
+        border-left: 15px solid red;
+        border-right: 15px solid red;
+        border-bottom: 15px solid transparent;
+    }
+    
+
+
+}
+
+/* Large screens and Desktops – 1025px — 1200px */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .nav-menu {
+        justify-content: center;
+        padding-left: 5rem;
+        padding-right: 4rem;
+        position: relative;
+    }
+}
