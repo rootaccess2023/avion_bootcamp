@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blood Donation Form">
+  <link rel="stylesheet" type="text/css" href="blood.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <nav>
+    <div class="prc-logo">
+      <a href="https://redcross.org.ph/give-blood/" target="_blank"><img id="blood-bank" src="/images/bloodbanklogo.png"
+          alt="blood bank"></a>
+    </div>
+
+    <div class="nav-menu">
+      <a href="/index.html" target="_blank">Home</a>
+      <a href="/blood.css" target="_blank">Survey Form</a>
+      <a href="https://redcross.org.ph/contact-us/" target="_blank">Contact</a>
+    </div>
+
+    <div id="align-right">
+      <div>
+        <h1><a href="https://redcross.org.ph/" target="_blank">redcross.org.ph</a></h1>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="survey-form">
+    <div class="bookmark"></div>
+
+    <div>
+      <h1 id="title">Blood Donation Form</h1>
+      <p id="description">Please fill up the following:</p>
+    </div>
+
+    <form action="#" method="post">
+
+      <label>Select Your Blood Type:</label>
+      <div class="container-flex">
+        <div id="container-padding">
+          <div>
+            <input type="radio" id="A+" name="bloodType" value="A+">
+            <label for="A+">A positive (A+)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="A-" name="bloodType" value="A-">
+            <label for="A-">A negative (A-)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="B+" name="bloodType" value="B+">
+            <label for="B+">B positive (B+)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="B-" name="bloodType" value="B-">
+            <label for="B-">B negative (B-)</label>
+          </div>
+        </div>
+
+        <div id="container-padding">
+          <div>
+            <input type="radio" id="AB+" name="bloodType" value="AB+">
+            <label for="AB+">AB positive (AB+)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="AB-" name="bloodType" value="AB-">
+            <label for="AB-">AB negative (AB-)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="O+" name="bloodType" value="O+">
+            <label for="O+">O positive (O+)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="O-" name="bloodType" value="O-">
+            <label for="O-">O negative (O-)</label>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <section class="label-padding">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" title="Please enter your full name" required>
+      </section>
+
+      <section class="label-padding">
+        <div class="label-padding">
+          <label id="birthDate" for="birthDate">Birth Date:</label>
+        </div>
+
+        <div class="container-flex">
+          <div class="container-flex-column option-margin">
+            <label id="dropdown" for="birthMonth">Month:</label>
+            <select id="birthMonth" name="birthMonth" class="form-dropdown">
+              <option value="Select"></option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+
+          <div class="container-flex-column option-margin">
+            <label id="dropdown" for="birthDay">Day:</label>
+            <select id="birthDay" name="birthDay" class="form-dropdown">
+              <option value="Select"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+          </div>
+
+          <div class="container-flex-column option-margin">
+            <label id="dropdown" for="birthYear">Year:</label>
+            <select id="birthYear" name="birthYear" class="form-dropdown">
+              <option value="Select"></option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1994">1994</option>
+              <option value="1993">1993</option>
+              <option value="1992">1992</option>
+              <option value="1991">1991</option>
+              <option value="1990">1990</option>
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+              <option value="1987">1987</option>
+              <option value="1986">1986</option>
+              <option value="1985">1985</option>
+              <option value="1984">1984</option>
+              <option value="1983">1983</option>
+              <option value="1982">1982</option>
+              <option value="1981">1981</option>
+              <option value="1980">1980</option>
+              <option value="1979">1979</option>
+              <option value="1978">1978</option>
+              <option value="1977">1977</option>
+              <option value="1976">1976</option>
+              <option value="1975">1975</option>
+              <option value="1974">1974</option>
+              <option value="1973">1973</option>
+              <option value="1972">1972</option>
+              <option value="1971">1971</option>
+              <option value="1970">1970</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="container-flex">
+          <div class="container-flex">
+            <div id="gender-padding">
+              <div class="label-padding">
+                <label id="gender" for="gender">Gender:</label>
+              </div>
+              <div>
+                <input type="radio" id="maleOption" name="gender" value="male">
+                <label id="gender-padding" for="maleRadio">Male</label>
+
+                <input type="radio" id="femaleOption" name="gender" value="female">
+                <label for="femaleRadio">Female</label>
+              </div>
+
+            </div>
+            <div>
+              <label id="occupation" for="occupation">Occupation:</label>
+              <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required>
+            </div>
+          </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="container-flex">
+          <div class="text-margin">
+            <label id="number-label" for="number">Mobile Number:</label>
+            <input type="text" id="number" name="number" placeholder="Enter your Mobile number"
+              pattern="(09|\+639)\d{9}" title="Please enter a valid mobile number" required>
+          </div>
+
+          <div>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address">
+          </div>
+        </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="label-padding">
+          <label for="streetAddress">Street Address:</label>
+          <input type="text" id="streetAddress" name="streetAddress" placeholder="Enter your street address" required>
+        </div>
+
+        <div class="container-flex">
+          <div class="text-margin">
+            <label for="cityAndProvince">City / Province</label>
+            <input type="text" id="cityAndProvince" name="cityAndProvince" placeholder="Enter your city and province "
+              required>
+          </div>
+
+          <div>
+            <label for="postalCode">Postal/Zip Code:</label>
+            <input type="text" id="postalCode" name="postalCode" placeholder="Enter your postal/zip code" required>
+          </div>
+        </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="container-flex">
+          <div class="text-margin">
+            <label for="weight">Weight (in kg):</label>
+            <input type="number" id="weight" name="weight" placeholder="Minimum of 50kg" min="50" max="100"
+              title="Please enter weight" required>
+          </div>
+
+          <div>
+            <label for="pulse">Pulse (beats per minute):</label>
+            <input type="number" id="pulse" name="pulse" placeholder="50 and 100 beats per minute" min="50" max="100"
+              title="Please enter pulse" required>
+          </div>
+        </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="container-flex">
+          <div class="text-margin">
+            <label for="bloodPressure">Blood Pressure (mmHg):</label>
+            <input type="number" id="bloodPressure" name="bloodPressure"
+              placeholder="90 and 160 systolic / 60 and 100 diastolic" min="0" max="160" required>
+          </div>
+
+          <div>
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" name="temperature" placeholder="must not exceed 37.5 deg. C" min="0"
+              max="37.5" required>
+          </div>
+        </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="container-flex">
+          <div class="container-flex text-margin">
+            <div>
+              <div class="label-padding">
+                <label for="donationStatus">Have you donated previously?</label>
+              </div>
+              <div class="container-flex">
+                <div>
+                  <input type="radio" id="yes" name="donationStatus" value="yes">
+                  <label id="gender-padding" for="yes">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" id="no" name="donationStatus" value="no">
+                  <label for="no">No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="label-padding">
+              <label for="lastDonationDate">When was the last time you donated blood?</label>
+            </div>
+            <div>
+              <input type="date" id="lastDonationDate" name="lastDonationDate" required>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="label-padding">
+          <label> In the last six months, have you had any of the following?</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="tattooing" name="activities" value="tattooing">
+          <label for="tattooing">Tattooing</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="earPiercing" name="activities" value="earPiercing">
+          <label for="earPiercing">Ear Piercing</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="dentalExtraction" name="activities" value="dentalExtraction">
+          <label for="dentalExtraction">Dental Extraction</label>
+        </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="label-padding">
+          <label>Do you suffer from or have suffered from any of the following diseases?</label>
+        </div>
+        <div>
+          <div class="container-flex con">
+            <div class="text-margin">
+              <div>
+                <input type="checkbox" id="heartDisease" name="diseases" value="heartDisease">
+                <label for="heartDisease">Heart Disease</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="diabetes" name="diseases" value="diabetes">
+                <label for="diabetes">Diabetes</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="std" name="diseases" value="std">
+                <label for="std">Sexually Transmitted Diseases</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="lungDisease" name="diseases" value="lungDisease">
+                <label for="lungDisease">Lung Disease</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="allergicDisease" name="diseases" value="allergicDisease">
+                <label for="allergicDisease">Allergic Disease</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="epilepsy" name="diseases" value="epilepsy">
+                <label for="epilepsy">Epilepsy</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="jaundice" name="diseases" value="jaundice">
+                <label for="jaundice">Jaundice (last one year)</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="faintingSpells" name="diseases" value="faintingSpells">
+                <label for="faintingSpells">Fainting Spells</label>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <input type="checkbox" id="cancer" name="diseases" value="cancer">
+                <label for="cancer">Cancer/Malignant Disease</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="hepatitis" name="diseases" value="hepatitis">
+                <label for="hepatitis">Hepatitis B/C</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="typhoid" name="diseases" value="typhoid">
+                <label for="typhoid">Typhoid (last one year)</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="tuberculosis" name="diseases" value="tuberculosis">
+                <label for="tuberculosis">Tuberculosis</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="kidneyDisease" name="diseases" value="kidneyDisease">
+                <label for="kidneyDisease">Kidney Disease</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="abnormalBleeding" name="diseases" value="abnormalBleeding">
+                <label for="abnormalBleeding">Abnormal Bleeding Tendency</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="malaria" name="diseases" value="malaria">
+                <label for="malaria">Malaria (six months)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="label-padding">
+        <div class="label-padding">
+          <label>Are you taking or have you taken any of these in the past 72 hours?</label>
+        </div>
+        <div class="label-padding">
+
+          <div>
+            <input type="checkbox" id="antibiotics" name="medications" value="antibiotics">
+            <label for="antibiotics">Antibiotics</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="steroids" name="medications" value="steroids">
+            <label for="steroids">Steroids</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="aspirin" name="medications" value="aspirin">
+            <label for="aspirin">Aspirin</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="vaccinations" name="medications" value="vaccinations">
+            <label for="vaccinations">Vaccinations</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="alcohol" name="medications" value="alcohol">
+            <label for="alcohol">Alcohol</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="rabiesVaccine" name="medications" value="rabiesVaccine">
+            <label for="rabiesVaccine">Dog bite Rabies vaccine (1 year)</label>
+          </div>
+        </div>
+
+        <div class="label-padding">
+          <label>Is there any history of surgery or blood transfusion in the past six months?</label>
+        </div>
+        <div class="container-flex-column">
+          <div>
+            <input type="checkbox" id="majorSurgery" name="surgeryTransfusion" value="majorSurgery">
+            <label for="majorSurgery">Major Surgery</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="minorSurgery" name="surgeryTransfusion" value="minorSurgery">
+            <label for="minorSurgery">Minor Surgery</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="bloodTransfusion" name="surgeryTransfusion" value="bloodTransfusion">
+            <label for="bloodTransfusion">Blood Transfusion</label>
+          </div>
+        </div>
+      </section>
+
+      <section id="comments" class="label-padding">
+        <div class="label-padding">
+          <p>Additional Comments:</p>
+          <textarea class="label-padding" placeholder="Write other important details." id="" cols="70"
+            rows="10"></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+      </section>
+    </form>
+
+
+  </main>
+  <footer>
+    <p>&copy; 2023 Paulo Oliver. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <!--
+          This script places a badge on your repl's full-browser view back to your repl's cover
+          page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+          teal, blue, blurple, magenta, pink!
+          -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+</body>
+
+</html>
