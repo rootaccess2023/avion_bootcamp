@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="chess-background"></div>
+        <section id="game-title">
+            <h1>Chess</h1>
+            <h1>Champion</h1>
+            <p>Choose the right board for your game:</p>
+
+            <div id="accordion">
+                <div class="accordion-list">
+                    <label for="first">Responsive Chessboard (Flex)<a href="/flex.html"><img class="play-button" src="/images/play.png" alt=""></a></label>
+                    <input type="radio" name="accordion" id="first">
+                    <div class="content">
+                        <p>Perfect for a modern and flexible layout.</p>
+                        <p>Adjusts seamlessly to different screen sizes.</p>
+                        <p>Ensures all 64 squares are visible, creating an optimal gaming experience.</p>
+                    </div>
+                </div>
+                <div class="accordion-list">
+                    <label for="second">Responsive Chessboard (Grid)<a href="/grid.html"><img class="play-button" src="/images/play.png" alt=""></a></label>
+                    <input type="radio" name="accordion" id="second">
+                    <div class="content">
+                        <p>Ideal for a grid-based layout with precise control.</p>
+                        <p>Offers a clean and structured design.</p>
+                        <p>Ensures responsiveness while maintaining a classic chessboard appearance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
