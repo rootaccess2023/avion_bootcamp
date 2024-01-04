@@ -1,0 +1,94 @@
+/* chess page designs */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-image: url('/images/Chess\ Landing\ Page.png');
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3.2rem;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -0.1rem;
+    font-weight: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.accordion-list {
+    margin-bottom: 10px;
+}
+
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    --hover: #3498db;
+    transition: box-shadow 0.3s ease;
+    border-radius: 50%; 
+}
+
+.play-button:hover,
+.play-button:focus {
+    animation: pulse 1s;
+    box-shadow: 1rem 0 8rem 0.5rem var(--hover) inset;
+}
+
+#accordion .accordion-list {
+    list-style: none;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    width: 500px;
+    padding: 0.4rem;
+}
+
+#accordion .accordion-list label {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #c20000;
+}
+
+#accordion label + input[type=radio] {
+    display: none;
+}
+
+#accordion .content {
+    padding: 0 0.6rem 0 3rem;
+    line-height: 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label + input[type=radio]:checked + .content {
+    max-height: 400px;
+}
+
+#game-title {
+    display: flex;
+    flex-direction: column;
+}
