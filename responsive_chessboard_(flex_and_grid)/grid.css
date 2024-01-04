@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-image: url('/images/Chess\ Landing\ Page.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.row {
+    display: contents;
+}
+
+.square {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.label {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.square {
+    font-size: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.square:hover {
+    transform: scale(1.09);
+    border-color: yellow;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: #0096FF;
+}
+
+.color-black {
+    background-color: lightseagreen;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
