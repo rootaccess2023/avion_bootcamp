@@ -4,11 +4,11 @@ body {
     margin: 0;
     background-image: url('/images/Chess\ Landing\ Page.png');
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -16,6 +16,7 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     background-color: rgba(255, 255, 255, 0.5);
+    box-sizing: content-box;
 }
 
 .row {
@@ -23,29 +24,32 @@ body {
 }
 
 .square {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 9vmin;
+    width: 9vmin;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 0.1vmin solid black;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
 }
 
 .label {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 9vmin;
+    width: 9vmin;
+    max-height: 9vmin;
+    max-width: 9vmin;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 0.1vmin solid rgba(255, 255, 255, 0.5);
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
+    font-size: 3vmin;
 }
 
 .square {
-    font-size: 1.5rem;
+    font-size: 5vmin;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -70,6 +74,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 5vmin;
+    width: 5vmin;
 }
